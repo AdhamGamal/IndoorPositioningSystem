@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@android:color/white"
+    android:elevation="6dp"
+    android:foreground="?android:selectableItemBackground"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="MacAddress : "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="22:A2:BB:2C"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Position : "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="("
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/posx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:text="10.50"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=", "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/posy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:text="25.25"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=")"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Calibrated TX-Power : "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tx_power"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="120"
+                android:textAppearance="?android:textAppearanceLarge" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

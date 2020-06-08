@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@android:color/white"
+    android:paddingEnd="8dp"
+    android:paddingStart="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="start|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="N : "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/N"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:text="120"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="start|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="X : "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/W"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:text="120"
+                android:textAppearance="?android:textAppearanceLarge" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

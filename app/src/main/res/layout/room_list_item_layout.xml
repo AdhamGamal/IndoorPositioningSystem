@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@android:color/white"
+    android:elevation="6dp"
+    android:foreground="?android:selectableItemBackground"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center"
+            android:padding="8dp"
+            android:text="Room Name"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Xroom : "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/xroom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0.0"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Yroom : "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/yroom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0.0"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

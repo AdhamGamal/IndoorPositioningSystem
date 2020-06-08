@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp"
+    android:paddingEnd="8dp"
+    android:paddingStart="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@android:color/white"
+            android:elevation="6dp"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Room : "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/room"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="No Room"
+                android:textAppearance="?android:textAppearanceLarge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@android:color/white"
+            android:elevation="6dp"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="X : "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/POSX"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0.0"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Y : "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/POSY"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0.0"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

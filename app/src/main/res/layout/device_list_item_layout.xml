@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="6dp"
+    android:background="@android:color/white"
+    android:elevation="6dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="Beacon Name"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="22:A2:BB:2C"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:gravity="end"
+                android:text="RSSI"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/rssi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:gravity="end"
+                android:text="-60"
+                android:textAppearance="?android:textAppearanceLarge" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IPS App</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_tapped">IPS APP</string>
+    <string name="tab_text_1">Position</string>
+    <string name="tab_text_2">Beacons</string>
+    <string name="tab_text_3">Rooms</string>
+</resources>

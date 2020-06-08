@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="6dp"
+            android:background="@android:color/white"
+            android:elevation="6dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bledevice" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@android:color/white"
+            android:elevation="6dp"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Mac Address : "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="A1:22:3B:58:34:8F"
+                android:textAppearance="?android:textAppearanceLarge" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@android:color/white"
+            android:elevation="6dp"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="RSSI :"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/rssi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-67"
+                android:textAppearance="?android:textAppearanceLarge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@android:color/white"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="UUID :"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/uuid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10012148-8321-2132-4658-978754231216"
+                android:textAppearance="?android:textAppearanceLarge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@android:color/white"
+            android:elevation="6dp"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Calibrated TX-POWER : "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tx_power"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="120"
+                android:textAppearance="?android:textAppearanceLarge" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@android:color/white"
+            android:elevation="6dp"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Distance : "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="120"
+                android:textAppearance="?android:textAppearanceLarge" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
